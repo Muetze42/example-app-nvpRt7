@@ -11,3 +11,8 @@ Example app for [norman-huth/nova-menu](https://github.com/Muetze42/nova-menu/bl
 ### Install
 
 After install run php `artisan migrate --seed` and login with `admin@example.com`:`password`.
+
+####  
+
+* Menu: [app/Providers/NovaServiceProvider.php](app/Providers/NovaServiceProvider.php)
+* CSS: [app/Providers/NovaServiceProvider.php](app/Providers/NovaServiceProvider.php)
