@@ -15,4 +15,4 @@ After install run php `artisan migrate --seed` and login with `admin@example.com
 ####  
 
 * Menu: [app/Providers/NovaServiceProvider.php](app/Providers/NovaServiceProvider.php)
-* CSS: [app/Providers/NovaServiceProvider.php](app/Providers/NovaServiceProvider.php)
+* CSS: [public/css/icons.css](public/css/icons.css)
