@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3d2c3a0981f9d21c4d5b6753b75919eb",
+    "content-hash": "1af807d45cc96d33adda014f991aaccf",
     "packages": [
         {
             "name": "brick/math",
@@ -1452,16 +1452,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v10.6.1",
+            "version": "v10.6.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "1282e96202085f798528ee43371b2ffbb8dcfbd8"
+                "reference": "13dc93889617427352f72b6aa8b195b252af1197"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/1282e96202085f798528ee43371b2ffbb8dcfbd8",
-                "reference": "1282e96202085f798528ee43371b2ffbb8dcfbd8",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/13dc93889617427352f72b6aa8b195b252af1197",
+                "reference": "13dc93889617427352f72b6aa8b195b252af1197",
                 "shasum": ""
             },
             "require": {
@@ -1560,7 +1560,7 @@
                 "league/flysystem-read-only": "^3.3",
                 "league/flysystem-sftp-v3": "^3.0",
                 "mockery/mockery": "^1.5.1",
-                "orchestra/testbench-core": "^8.3",
+                "orchestra/testbench-core": "^8.4",
                 "pda/pheanstalk": "^4.0",
                 "phpstan/phpdoc-parser": "^1.15",
                 "phpstan/phpstan": "^1.4.7",
@@ -1648,7 +1648,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2023-04-04T20:58:15+00:00"
+            "time": "2023-04-05T15:28:17+00:00"
         },
         {
             "name": "laravel/nova",
@@ -2756,6 +2756,60 @@
                 "source": "https://github.com/nikic/PHP-Parser/tree/v4.15.4"
             },
             "time": "2023-03-05T19:49:14+00:00"
+        },
+        {
+            "name": "norman-huth/nova-assets-versioning",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Muetze42/nova-assets-versioning.git",
+                "reference": "e423ed9055228f35347858b088374ed7923148e0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Muetze42/nova-assets-versioning/zipball/e423ed9055228f35347858b088374ed7923148e0",
+                "reference": "e423ed9055228f35347858b088374ed7923148e0",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/nova": "^4.0",
+                "php": "^8.0"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "nova/Script.php",
+                    "nova/Style.php"
+                ],
+                "psr-4": {
+                    "NormanHuth\\NovaAssetsVersioning\\": "src/"
+                },
+                "exclude-from-classmap": [
+                    "vendor\\laravel\\nova\\src\\Script.php",
+                    "vendor\\laravel\\nova\\src\\Style.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Norman Huth",
+                    "homepage": "https://huth.it"
+                }
+            ],
+            "support": {
+                "issues": "https://github.com/Muetze42/nova-assets-versioning/issues",
+                "source": "https://github.com/Muetze42/nova-assets-versioning/tree/1.0.0"
+            },
+            "funding": [
+                {
+                    "url": "https://huth.it/coffee",
+                    "type": "custom"
+                }
+            ],
+            "time": "2023-04-05T17:10:03+00:00"
         },
         {
             "name": "norman-huth/nova-menu",
