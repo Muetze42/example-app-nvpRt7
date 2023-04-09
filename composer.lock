@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1af807d45cc96d33adda014f991aaccf",
+    "content-hash": "fd953917c5a94f67899d9930245f3836",
     "packages": [
         {
             "name": "brick/math",
@@ -2864,6 +2864,59 @@
                 }
             ],
             "time": "2023-04-05T06:23:04+00:00"
+        },
+        {
+            "name": "norman-huth/nova-resource-card",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Muetze42/norman-huth-nova-resource-card.git",
+                "reference": "33710cdeeec9c32f8c3d5f296cc791914ad5d7ae"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Muetze42/norman-huth-nova-resource-card/zipball/33710cdeeec9c32f8c3d5f296cc791914ad5d7ae",
+                "reference": "33710cdeeec9c32f8c3d5f296cc791914ad5d7ae",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/nova": "^4.0",
+                "php": "^8.0"
+            },
+            "default-branch": true,
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "NormanHuth\\NovaResourceCard\\CardServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "NormanHuth\\NovaResourceCard\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "A Laravel Nova card.",
+            "keywords": [
+                "laravel",
+                "nova"
+            ],
+            "support": {
+                "issues": "https://github.com/Muetze42/norman-huth-nova-resource-card/issues",
+                "source": "https://github.com/Muetze42/norman-huth-nova-resource-card/tree/main"
+            },
+            "funding": [
+                {
+                    "url": "https://huth.it/coffee",
+                    "type": "custom"
+                }
+            ],
+            "time": "2023-04-09T00:18:37+00:00"
         },
         {
             "name": "nunomaduro/termwind",
@@ -8926,7 +8979,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "norman-huth/nova-resource-card": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {

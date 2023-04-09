@@ -3,6 +3,7 @@
 namespace App\Nova\Dashboards;
 
 use Laravel\Nova\Dashboards\Main as Dashboard;
+use NormanHuth\NovaResourceCard\NovaResourceCard;
 
 class Main extends Dashboard
 {
@@ -13,6 +14,9 @@ class Main extends Dashboard
      */
     public function cards(): array
     {
-        return [];
+        return [
+            (new NovaResourceCard(\App\Nova\Resources\User::class))->addResourceCardClasses(['my-class', 'p-2']),
+            (new NovaResourceCard(\App\Nova\Resources\CardUser::class))->width('1/2'),
+        ];
     }
 }

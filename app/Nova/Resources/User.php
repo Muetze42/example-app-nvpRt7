@@ -9,6 +9,7 @@ use Laravel\Nova\Fields\Password;
 use Laravel\Nova\Fields\Text;
 use Laravel\Nova\Fields\PasswordConfirmation;
 use Laravel\Nova\Http\Requests\NovaRequest;
+use NormanHuth\NovaResourceCard\NovaResourceCard;
 
 class User extends Resource
 {
@@ -77,7 +78,9 @@ class User extends Resource
      */
     public function cards(NovaRequest $request): array
     {
-        return [];
+        return [
+            (new NovaResourceCard(\App\Nova\Resources\CardUser::class)),
+        ];
     }
 
     /**

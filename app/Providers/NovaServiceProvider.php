@@ -40,6 +40,8 @@ class NovaServiceProvider extends NovaApplicationServiceProvider
                 MenuSection::dashboard(Main::class)
                     ->icon('chart-bar')->elemClasses('bg-slate-300 dark:bg-slate-950'),
 
+                MenuItem::resource(User::class),
+
                 MenuSection::make('Fleet', [
                     MenuItem::resource(Car::class)
                         ->faIcon('fa-solid fa-car')
@@ -95,7 +97,11 @@ class NovaServiceProvider extends NovaApplicationServiceProvider
     {
         Nova::footer(function ($request) {
             return Blade::render('
-            <p class="text-center text-base mb-4">Example App for <a class="link-default" href="https://github.com/Muetze42/nova-menu" target="_blank">norman-huth/nova-menu</a> by <a class="link-default" href="https://huth.it/" target="_blank">Norman Huth</a></p>
+            <p class="text-center text-base mb-4">Example App for
+                <a class="link-default" href="https://github.com/Muetze42/nova-menu" target="_blank">norman-huth/nova-menu</a> and
+                <a class="link-default" href="https://github.com/Muetze42/norman-huth-nova-resource-card" target="_blank">norman-huth/norman-huth-nova-resource-card</a> by
+                <a class="link-default" href="https://huth.it/" target="_blank">Norman Huth</a>
+            </p>
             <p class="text-center">Powered by <a target="_blank" class="link-default" href="https://nova.laravel.com">Laravel Nova</a> · v{!! $version !!}</p>
             <p class="text-center">&copy; {!! $year !!} Laravel LLC &middot; by Taylor Otwell and David Hemphill.</p>
         ', [
