@@ -22,6 +22,7 @@ use App\Nova\Resources\Setting;
 use App\Nova\Resources\Spare;
 use App\Nova\Resources\User;
 
+use NormanHuth\NovaMenu\MenuCard;
 use NormanHuth\NovaMenu\MenuSection;
 use NormanHuth\NovaMenu\MenuGroup;
 use NormanHuth\NovaMenu\MenuItem;
@@ -39,8 +40,6 @@ class NovaServiceProvider extends NovaApplicationServiceProvider
             return [
                 MenuSection::dashboard(Main::class)
                     ->icon('chart-bar')->elemClasses('bg-slate-300 dark:bg-slate-950'),
-
-                MenuItem::resource(User::class),
 
                 MenuSection::make('Fleet', [
                     MenuItem::resource(Car::class)
@@ -72,6 +71,11 @@ class NovaServiceProvider extends NovaApplicationServiceProvider
                         ->faIcon('fa-solid fa-user')
                         ->iconClasses(['fa-fw', 'customers']),
                 ])->faIcon('fa-solid fa-users')->collapsable(),
+
+                MenuCard::make('info')
+                    ->view('news', ['name' => $request->user()->name])
+                    ->addClasses(['text-center'])
+                    ->rounded(),
             ];
         });
     }

@@ -4,6 +4,7 @@ namespace App\Nova\Resources;
 
 use Laravel\Nova\Fields\ID;
 use Laravel\Nova\Http\Requests\NovaRequest;
+use NormanHuth\NovaRadioField\Radio;
 
 class Post extends Resource
 {
@@ -40,6 +41,12 @@ class Post extends Resource
     {
         return [
             ID::make()->sortable(),
+            Radio::make(__('Radio'), 'select')
+                ->options([
+                    'S' => __('Small'),
+                    'M' => __('Medium'),
+                    'L' => __('Large'),
+                ])
         ];
     }
 
